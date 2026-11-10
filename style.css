@@ -305,3 +305,48 @@ footer {
   color: #333;
   margin-top: 15px;
 }
+
+/* About Me セクション全体のスタイル */
+#about-me {
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+#about-me h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  border-bottom: 2px solid #007acc; /* アクセントカラーの線 */
+  padding-bottom: 0.2rem;
+}
+
+/* スキルリストのスタイル */
+#about-me ul {
+  list-style: none; /* デフォルトの丸ポチを消す */
+  padding-left: 0;
+}
+
+#about-me li {
+  margin-bottom: 0.8rem;
+  padding: 0.5rem 0.8rem;
+  background-color: #f9f9f9; /* カード風の背景色 */
+  border-left: 4px solid #007acc; /* 左側にワンポイントのアクセント */
+  border-radius: 4px;
+}
+
+/* 技術名（強調）のスタイル */
+#about-me strong {
+  color: #111;
+  font-weight: 600;
+}
+
+/* コマンドやツール名（codeタグ）のスタイル */
+#about-me code {
+  background-color: #eef2f5;
+  color: #d63384;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
+  font-size: 0.9em;
+}
