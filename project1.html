@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 1 - Details | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">Portfolio</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 作品詳細コンテンツ -->
+  <main class="container">
+    <!-- トップへ戻るリンク -->
+    <p><a href="index.html#works">&larr; 作品一覧に戻る</a></p>
+
+    <h1 style="margin: 1.5rem 0;">ターン制ゲーム</h1>
+    
+    <!-- project1.html 内 -->
+    <!-- スライドショー -->
+<div class="slideshow" id="slideshow">
+
+  <img src="images/gc1.png" class="slide active" alt="画像1">
+
+  <img src="images/gc2.png" class="slide" alt="画像2">
+
+  <img src="images/gc3.png" class="slide" alt="画像3">
+
+  <img src="images/gc4.png" class="slide" alt="画像4">
+
+</div>
+
+<!-- 下の丸いボタン -->
+<div class="slide-dots" id="slide-dots">
+  <button class="dot active" aria-label="画像1"></button>
+  <button class="dot" aria-label="画像2"></button>
+  <button class="dot" aria-label="画像3"></button>
+  <button class="dot" aria-label="画像4"></button>
+</div>
+
+<script src="main.js"></script>
+
+    <section class="project-section">
+      <h2>概要</h2>
+      <p>プログラミングの授業で作成した課題です．プレイヤーとコンピュータが交互に行動して戦う,コマンド選択式のゲームです.
+      <ul>
+        <li><strong>勝敗条件:</strong> プレイヤーまたは相手のHPが0</li>
+        <li><strong>作品URL:</strong><a href="https://colab.research.google.com/drive/1zK0muYMqjtTlNnqvRctzrZ4r4zy4ecHd?usp=sharing" class="more-link">https://colab.research.google.com/drive/1zK0muYMqjtTlNnqvRctzrZ4r4zy4ecHd?usp=sharing</a>
+        </li>
+      </ul>
+      </p>
+    </section>
+
+    <section class="project-section" style="margin-top: 2rem;">
+      <h2>使用技術</h2>
+      <ul>
+        <li><strong>使用技術:</strong> python</li>
+        <li><strong>制作期間:</strong> 28時間
+        </li>
+      </ul>
+    </section>
+
+    <section class="project-section" style="margin-top: 2rem;">
+      <h2>工夫した点</h2>
+      <p>攻撃・防御・回復など複数のコマンドを用意し，戦略性を持たせました．</p>
+      <p>乱数を使いダメージや回復量などにばらつきを持たせ，毎回展開が変わるようにしました．</p>
+      <p></p>
+    </section>
+    <section class="project-section" style="margin-top: 2rem;">
+      <h2>苦労した点</h2>
+      <p>デザインにおけるこだわりや、実装時に課題となった点とそれをどのように解決したかを記載すると評価につながりやすくなります。</p>
+    </section>
+
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="index.html#works" class="btn">作品一覧に戻る</a>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,261 @@
+/* 全体設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+header nav ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #0070f3;
+}
+
+/* メインビジュアル */
+.hero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background: #fff;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  color: #666;
+  font-size: 1.2rem;
+}
+
+/* 共通セクションスタイル */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.container h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Works (グリッドレイアウト) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  padding: 1.5rem;
+}
+
+.card-image {
+  width: 100%;
+  height: 180px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Contact */
+#contact {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.8rem 2rem;
+  background-color: #0070f3;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0051a2;
+}
+
+/* フッター */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  border-top: 1px solid #eaeaea;
+  color: #888;
+  font-size: 0.9rem;
+}
+/* カード内のリンク設定 */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-link:hover h3 {
+  color: #0070f3;
+}
+
+.more-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #0070f3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.more-link:hover {
+  text-decoration: underline;
+}
+
+/* 詳細ページのスタイル */
+.project-section h2 {
+  text-align: left;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #0070f3;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.project-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project-section li {
+  margin-bottom: 0.5rem;
+}
+
+/* カード画像のスタイル */
+.card-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover; /* 縦横比を保ったまま領域いっぱいに表示 */
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* 詳細ページの画像スタイル */
+.project-detail-image {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+/* スライドショー全体 */
+.slideshow {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 16 / 9;
+  margin: 1rem auto 0;
+  overflow: hidden;
+  background: #f0f0f0;
+  border-radius: 10px;
+}
+
+/* 画像 */
+.slideshow .slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  object-position: center;
+
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+/* 表示中の画像 */
+.slideshow .slide.active {
+  opacity: 1;
+}
+
+/* 丸ボタン全体 */
+.slide-dots {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 15px auto;
+}
+
+/* 丸ボタン */
+.slide-dots .dot {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+/* 選択中の丸 */
+.slide-dots .dot.active {
+  background: #0070f3;
+  transform: scale(1.3);
+}
+
+/* マウスを乗せたとき */
+.slide-dots .dot:hover {
+  background: #0051a2;
+}

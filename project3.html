@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>どいさｄ- Details | My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">Portfolio</a></div>
+    <nav>
+      <ul>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#works">Works</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 作品詳細コンテンツ -->
+  <main class="container">
+    <!-- トップへ戻るリンク -->
+    <p><a href="index.html#works">&larr; 作品一覧に戻る</a></p>
+
+    <h1 style="margin: 1.5rem 0;">Unityで作成したターン制ゲーム</h1>
+    
+    <!-- スライドショー -->
+<div class="slideshow" id="slideshow">
+
+  <img src="images/gc1.png" class="slide active" alt="画像1">
+
+  <img src="images/gc2.png" class="slide" alt="画像2">
+
+  <img src="images/gc3.png" class="slide" alt="画像3">
+
+  <img src="images/gc4.png" class="slide" alt="画像4">
+
+</div>
+
+<!-- 下の丸いボタン -->
+<div class="slide-dots" id="slide-dots">
+  <button class="dot active" aria-label="画像1"></button>
+  <button class="dot" aria-label="画像2"></button>
+  <button class="dot" aria-label="画像3"></button>
+  <button class="dot" aria-label="画像4"></button>
+</div>
+
+<script src="main.js"></script>
+
+    <section class="project-section">
+      <h2>概要</h2>
+      <p>ここにはプロジェクトの全体像、目的、ターゲット層などを詳しく記述します。</p>
+    </section>
+
+    <section class="project-section" style="margin-top: 2rem;">
+      <h2>使用技術・担当範囲</h2>
+      <ul>
+        <li><strong>使用技術:</strong> Unity, C#</li>
+        <li><strong>制作期間:</strong> 20時間</li>
+      </ul>
+    </section>
+
+    <section class="project-section" style="margin-top: 2rem;">
+      <h2>工夫した点・苦労した点</h2>
+      <p>デザインにおけるこだわりや、実装時に課題となった点とそれをどのように解決したかを記載すると評価につながりやすくなります。</p>
+    </section>
+
+    <div style="margin-top: 3rem; text-align: center;">
+      <a href="index.html#works" class="btn">作品一覧に戻る</a>
+    </div>
+  </main>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+   <style>
+    /* このページ専用の追加スタイル(気に入らなければ style.css に移してOK) */
+    .slideshow { position: relative; width: 100%; max-width: 640px; aspect-ratio: 16 / 9; margin: 1rem 0; overflow: hidden; background: #eee; }
+    .slideshow .slide { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; opacity: 0; transition: opacity 0.8s ease; }
+    .slideshow .slide.active { opacity: 1; }
+    .detail-meta { list-style: none; padding: 0; margin: 1rem 0; }
+    .detail-meta li { margin-bottom: 0.4rem; }
+    .detail-section { margin-top: 2rem; }
+    .detail-section h3 { margin-bottom: 0.5rem; }
+    .detail-section ul { padding-left: 1.2rem; line-height: 1.8; }
+    .back-link { display: inline-block; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+
+  <!-- ヘッダー -->
+  <header>
+    <div class="logo">Portfolio</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#works">Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- メインビジュアル -->
+  <section class="hero">
+    <h1>Portfolio</h1>
+    <p>プログラミング</p>
+  </section>
+
+  <!-- 自己紹介 (About) -->
+  <section id="about" class="container">
+    <h2>About me</h2>
+    <p>大阪公立大学工業高等専門学校2年生．プログラミングをしてます．</p>
+  </section>
+
+<!-- 制作物 (Works) -->
+  <section id="works" class="container">
+    <h2>制作物</h2>
+    <div class="grid">
+
+<!-- Project 1 -->
+      <div class="card">
+        
+        <a href="project1.html" class="card-link">
+          <img src="images/gc1.png" alt="Project 1のサムネイル画像" class="card-image">
+          <h3>作成したターン制ゲーム</h3>
+        </a>
+        <p>GoogleColabで作成した簡単なターン制のゲーム</p>
+        <a href="project1.html" class="more-link">詳細を見る &rarr;</a><br>
+        <a href="https://colab.research.google.com/drive/1zK0muYMqjtTlNnqvRctzrZ4r4zy4ecHd?usp=sharing" class="more-link"> 作品に飛ぶ &rarr;</a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="card">
+        <a href="project2.html" class="card-link">
+          <div class="card-image"></div>
+          <h3>ハッカソン</h3>
+        </a>
+        <p>食堂の混雑緩和のために作成</p>
+        <a href="project2.html" class="more-link">詳細を見る &rarr;</a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="card">
+        <a href="project3.html" class="card-link">
+          <div class="card-image"></div>
+          <h3>Unityで作成したターン制ゲーム</h3>
+        </a>
+        <p>UnityとC#を使って作成したターン制のゲーム</p>
+        <a href="project3.html" class="more-link">詳細を見る &rarr;</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- お問い合わせ (Contact) -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>お問い合わせなどはこちらからどうぞ。</p>
+    <a href="mailto:your-email@example.com" class="btn">メールを送る</a>
+  </section>
+
+  <!-- フッター -->
+  <footer>
+    <p>&copy; 2026 [Your Name]. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
