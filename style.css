@@ -350,3 +350,41 @@ footer {
   font-family: Consolas, Monaco, 'Andale Mono', monospace;
   font-size: 0.9em;
 }
+
+/* 更新履歴 */
+.update-list {
+  max-width: 750px;
+  margin: 0 auto;
+}
+
+.update-item {
+  display: flex;
+  gap: 2rem;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.update-item time {
+  min-width: 110px;
+  color: #0070f3;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.update-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+
+.update-content p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .update-item {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
